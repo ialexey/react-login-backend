@@ -1,24 +1,27 @@
-# README
+# react-login-backend
+React login back-end
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Setup
+Tested on:
+- Ruby 2.4.1
+- Rails 5.1.4
 
-Things you may want to cover:
+- Install the app dependencies:
+`bundle`
 
-* Ruby version
+- Prepare the database:
+`
+    bin/rake db:create:all db:migrate
+`
 
-* System dependencies
+- Load static data into database (default user with admin@example.com:password credentials):
+`
+   bin/rake db:seed
+`
 
-* Configuration
+- Start the server
+`
+bin/rails s
+`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project will run at http://localhost:3000
